@@ -1,0 +1,36 @@
+<!-- Landing & Produk Page -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitus E-Commerce - Produk</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="./js/products.js"></script>
+</head>
+<body class="bg-gray-50">
+  <nav class="flex justify-center gap-4 py-4">
+    <a href="routes.php?page=index" class="text-orange-700 font-bold">Home</a>
+    <a href="routes.php?page=cart" class="text-orange-700 font-bold">Keranjang</a>
+    <a href="routes.php?page=login" class="text-orange-700 font-bold">Login</a>
+    <a href="routes.php?page=register" class="text-orange-700 font-bold">Register</a>
+    <a href="routes.php?page=dashboard" class="text-orange-700 font-bold">Dashboard</a>
+    <a href="routes.php?page=lokasi" class="text-orange-700 font-bold">Lokasi</a>
+  </nav>
+  <div x-data="produkList" x-init="fetchProduk()" class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold mb-6 text-center">Daftar Produk</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <template x-for="item in produk" :key="item.id">
+        <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+          <img :src="'./img/' + item.gambar" alt="Gambar" class="w-24 h-24 object-contain mb-2">
+          <h2 class="font-semibold text-lg" x-text="item.nama"></h2>
+          <p class="text-orange-700 font-bold" x-text="'Rp ' + item.harga.toLocaleString()"></p>
+          <p class="text-sm text-gray-500 mb-2" x-text="item.deskripsi"></p>
+          <button @click="$store.cart.add(item)" class="mt-auto bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700">Tambah ke Keranjang</button>
+        </div>
+      </template>
+    </div>
+  </div>
+</body>
+</html>

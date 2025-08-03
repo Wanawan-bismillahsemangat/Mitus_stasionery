@@ -1,0 +1,31 @@
+<!-- Dashboard Page (Proteksi login) -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Mitus E-Commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="./js/dashboard.js"></script>
+</head>
+<body class="bg-gray-50">
+  <nav class="flex justify-center gap-4 py-4">
+    <a href="routes.php?page=index" class="text-orange-700 font-bold">Home</a>
+    <a href="routes.php?page=cart" class="text-orange-700 font-bold">Keranjang</a>
+    <a href="routes.php?page=login" class="text-orange-700 font-bold">Login</a>
+    <a href="routes.php?page=register" class="text-orange-700 font-bold">Register</a>
+    <a href="routes.php?page=lokasi" class="text-orange-700 font-bold">Lokasi</a>
+  </nav>
+  <div x-data="dashboard" x-init="fetchUser()" class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold mb-6 text-center">Dashboard</h1>
+    <template x-if="user">
+      <div class="bg-white rounded-lg shadow-md p-6 max-w-md mx-auto">
+        <p class="mb-2"><span class="font-semibold">Nama:</span> <span x-text="user.nama"></span></p>
+        <p class="mb-2"><span class="font-semibold">Email:</span> <span x-text="user.email"></span></p>
+        <button @click="logout" class="mt-4 bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700">Logout</button>
+      </div>
+    </template>
+  </div>
+</body>
+</html>

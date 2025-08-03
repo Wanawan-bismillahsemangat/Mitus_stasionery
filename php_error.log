@@ -1,0 +1,7 @@
+PHP ERROR [2] require_once(C:\xampp\htdocs\Mitus_Web_proyek\backend\php\testimonial/../../models/Testimonial.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Mitus_Web_proyek\backend\php\testimonial\get_testimonials.php on line 19
+PHP ERROR [2] require_once(C:\xampp\htdocs\Mitus_Web_proyek\backend\php\testimonial/../../models/Testimonial.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Mitus_Web_proyek\backend\php\testimonial\get_testimonials.php on line 19
+PHP ERROR [2] require_once(C:\xampp\htdocs\Mitus_Web_proyek\backend\php\testimonial/../../models/Testimonial.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Mitus_Web_proyek\backend\php\testimonial\get_testimonials.php on line 19
+PHP ERROR [2] require_once(C:\xampp\htdocs\Mitus_Web_proyek\backend\php\testimonial/../../models/Testimonial.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Mitus_Web_proyek\backend\php\testimonial\get_testimonials.php on line 19
+PHP EXCEPTION: Table 'mitus_stationery.testimonials' doesn't exist
+PHP EXCEPTION: Table 'mitus_stationery.testimonials' doesn't exist
+PHP EXCEPTION: Table 'mitus_stationery.testimonials' doesn't exist
