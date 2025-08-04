@@ -41,10 +41,10 @@
   <script>setTimeout(()=>{const n=document.getElementById('notifStok');if(n)n.remove();},4000);</script>
 <?php endif; ?>
     <!-- Hero Section -->
-    <section class="relative flex flex-col md:flex-row items-center justify-between gap-10 px-8 py-16 bg-gradient-to-r from-primary/90 to-secondary/80 rounded-b-3xl shadow-xl mb-10 overflow-hidden">
+    <section class="relative flex flex-col md:flex-row items-center justify-between gap-10 px-8 py-16 rounded-b-3xl shadow-xl mb-10 overflow-hidden" style="background: url('assets/img/1751274028_Buku.jpeg') center/cover no-repeat;">
       <div class="max-w-xl z-10">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight drop-shadow-lg">Belanja Alat Tulis <span class="text-accent">Sekolah</span> Modern & Futuristik</h1>
-        <p class="text-lg text-indigo-100 mb-6">Temukan perlengkapan sekolah terbaik, harga terjangkau, dan desain kekinian untuk generasi masa depan. Belanja mudah, cepat, dan aman di Mitus School Store!</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-black mb-4 leading-tight drop-shadow-lg">Belanja Alat Tulis <span class="text-accent">Sekolah</span> Modern & Futuristik</h1>
+        <p class="text-lg text-black-900 mb-6">Temukan perlengkapan sekolah terbaik, harga terjangkau, dan desain kekinian untuk generasi masa depan. Belanja mudah, cepat, dan aman di Mitus School Store!</p>
         <a href="#produk" class="inline-block bg-accent hover:bg-yellow-400 text-primary font-bold px-6 py-3 rounded-lg shadow-lg transition">Lihat Produk</a>
       </div>
       <div class="absolute right-0 bottom-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl opacity-60"></div>
